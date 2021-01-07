@@ -10,7 +10,7 @@ public class Client {
 //		ConfigurableApplicationContext ctx =  new ClassPathXmlApplicationContext("beans.xml");
 		ConfigurableApplicationContext ctx =  new AnnotationConfigApplicationContext(AppConfig.class);
 		//step 1 create a container -> get all you class
-//		ApplicationContext ctx = new ClassPathX?mlApplicationContext("beans.xml");
+//		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 //		//step2 access the service 		
 		CalculatorService cs = (CalculatorService)ctx.getBean("service");//service is the injection 
 		System.out.println(cs.service(345));
